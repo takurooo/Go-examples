@@ -17,7 +17,7 @@ func main() {
 
 	// 大文字小文字変換
 	fmt.Println(strings.ToUpper("toupper")) // TOUPPER
-	fmt.Println(strings.ToUpper("TOLOWER")) // tolower
+	fmt.Println(strings.ToLower("TOLOWER")) // tolower
 
 	// タイトルケースに変換
 	fmt.Println(strings.Title("hey")) // "Hey"
@@ -48,7 +48,7 @@ func main() {
 	fmt.Println(strings.Index("abcc", "z"))     // -1
 	fmt.Println(strings.LastIndex("abcc", "c")) // 3
 
-	// 文字列型のsliceを連結
+	// slice内の文字列を連結
 	{
 		s := []string{"a", "b", "c"}
 		fmt.Println(strings.Join(s, ",")) // "a,b,c"
